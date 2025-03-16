@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-primary: #1DB954;
+  --color-primary-hover: #1ed760;
+  --color-error: #ff4b4b;
+  --color-warning: #f59b23;
+  --color-success: #1DB954;
+
+  /* Dark theme (default) */
+  --color-background: #121212;
+  --color-background-base: #000000;
+  --color-background-highlight: #1a1a1a;
+  --color-background-press: #000000;
+  
+  --color-surface: #282828;
+  --color-surface-light: #3e3e3e;
+  --color-surface-pressed: #181818;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #b3b3b3;
+  --color-text-tertiary: #727272;
+  
+  --color-border: #333333;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-default: all 0.2s ease;
+  --transition-slow: all 0.3s ease;
+  --transition-fast: all 0.1s ease;
+
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-background: #ffffff;
+  --color-background-base: #f8f8f8;
+  --color-background-highlight: #f0f0f0;
+  --color-background-press: #e8e8e8;
+  
+  --color-surface: #ffffff;
+  --color-surface-light: #f8f8f8;
+  --color-surface-pressed: #f0f0f0;
+  
+  --color-text-primary: #000000;
+  --color-text-secondary: #6a6a6a;
+  --color-text-tertiary: #909090;
+  
+  --color-border: #e0e0e0;
+} 

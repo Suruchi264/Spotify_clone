@@ -1,0 +1,147 @@
+.album-page {
+  padding: var(--spacing-xl);
+  background: linear-gradient(transparent 0, rgba(0, 0, 0, .5) 100%);
+}
+
+.album-header {
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.album-header img {
+  width: 232px;
+  height: 232px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.album-type {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.album-info h1 {
+  font-size: 96px;
+  font-weight: 900;
+  margin-bottom: var(--spacing-lg);
+}
+
+.album-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.artist-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.artist-name {
+  font-weight: 700;
+}
+
+.bullet {
+  color: var(--color-text-secondary);
+}
+
+.album-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.play-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: none;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.play-button:hover {
+  transform: scale(1.04);
+  background: var(--color-primary-hover);
+}
+
+.add-to-library-button,
+.more-button {
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 32px;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.add-to-library-button:hover,
+.more-button:hover {
+  color: var(--color-text-primary);
+}
+
+.tracks-list {
+  margin-top: var(--spacing-xl);
+}
+
+.tracks-header {
+  display: grid;
+  grid-template-columns: 48px 1fr 120px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.track-item {
+  display: grid;
+  grid-template-columns: 48px 1fr 120px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--color-text-secondary);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+.track-item:hover {
+  background: var(--color-surface-light);
+  color: var(--color-text-primary);
+}
+
+.track-number {
+  text-align: center;
+}
+
+.track-title {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .album-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .album-info h1 {
+    font-size: 48px;
+  }
+
+  .album-meta {
+    justify-content: center;
+  }
+} 

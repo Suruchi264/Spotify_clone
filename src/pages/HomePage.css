@@ -1,0 +1,159 @@
+.home-page {
+  padding: var(--spacing-xl);
+  background: linear-gradient(transparent 0, rgba(0, 0, 0, .5) 100%);
+}
+
+.welcome-section {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.welcome-section h1 {
+  font-size: 32px;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-primary);
+}
+
+.recently-played-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.recently-played-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: var(--transition-default);
+}
+
+.recently-played-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.recently-played-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.recently-played-item span {
+  padding: var(--spacing-md);
+  font-weight: 700;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  color: var(--color-text-primary);
+}
+
+.see-all {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.see-all:hover {
+  color: var(--color-text-primary);
+}
+
+.featured-section,
+.new-releases-section {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section h2 {
+  color: var(--color-text-primary);
+  font-size: 24px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.grid-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.grid-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.grid-item h3 {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  margin: var(--spacing-xs) 0;
+}
+
+.grid-item p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.artist-card img {
+  border-radius: 50%;
+}
+
+.playlist-card {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: var(--spacing-lg);
+  }
+
+  .welcome-section h1 {
+    font-size: 24px;
+  }
+
+  .cards-grid,
+  .recently-played-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+} 

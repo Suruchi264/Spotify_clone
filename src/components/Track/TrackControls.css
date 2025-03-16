@@ -1,0 +1,22 @@
+.track-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.like-button {
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  transition: var(--transition-default);
+}
+
+.like-button:hover {
+  color: var(--color-text-primary);
+}
+
+.like-button.active {
+  color: var(--color-primary);
+} 

@@ -1,0 +1,105 @@
+.profile-page {
+  padding: var(--spacing-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-page h1 {
+  font-size: 48px;
+  margin-bottom: var(--spacing-xxl);
+  color: var(--color-text-primary);
+}
+
+.profile-form {
+  background: var(--color-surface);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+}
+
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.upload-button {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-pill);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.upload-button:hover {
+  background: var(--color-primary-hover);
+  transform: scale(1.02);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-xl);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.form-group input {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-primary);
+  font-size: 16px;
+}
+
+.form-group input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.helper-text {
+  display: block;
+  margin-top: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background: var(--color-primary);
+  color: var(--color-text-primary);
+  border: none;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-pill);
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.save-button:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+  transform: scale(1.02);
+}
+
+.save-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+} 

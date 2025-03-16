@@ -1,0 +1,145 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: var(--color-background-base);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  padding: var(--spacing-md) 0;
+  margin-bottom: var(--spacing-lg);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-default);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--color-text-primary);
+}
+
+.main-nav a i {
+  font-size: 20px;
+}
+
+.playlist-section {
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+}
+
+.create-playlist-btn,
+.liked-songs-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-sm);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.create-playlist-btn:hover,
+.liked-songs-btn:hover {
+  color: var(--color-text-primary);
+}
+
+.playlists-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.playlists-list a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: var(--transition-default);
+}
+
+.playlists-list a:hover {
+  color: var(--color-text-primary);
+}
+
+.user-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-lg);
+}
+
+.install-app,
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  transition: var(--transition-default);
+}
+
+.install-app:hover,
+.user-profile:hover {
+  color: var(--color-text-primary);
+}
+
+.user-profile img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 64px;
+    padding: var(--spacing-sm);
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  .main-nav a span,
+  .playlist-section,
+  .playlists-list,
+  .user-profile span {
+    display: none;
+  }
+
+  .main-nav a {
+    justify-content: center;
+    padding: var(--spacing-sm);
+  }
+
+  .user-section {
+    align-items: center;
+  }
+} 
